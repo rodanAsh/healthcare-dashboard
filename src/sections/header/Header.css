@@ -7,7 +7,7 @@
 .left {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 }
 
 .title {
@@ -23,13 +23,12 @@
 .search-input {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 .search-input>span {
     display: flex;
     align-items: center;
-    background-color: var(--bg-base);
     padding: 4px 8px;
     border-radius: 5px;
 }

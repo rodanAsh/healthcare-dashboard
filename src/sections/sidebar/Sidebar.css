@@ -1,0 +1,28 @@
+.sidebar-wrapper {
+    background-color: var(--bg-base); 
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 16px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.sub-title {
+    font-size: 12px;
+    color: var(--text-neutral);
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-neutral);
+}
+
+.nav-icon {
+    font-size: 16px;
+}
+
+.nav-title {
+    font-size: 14px;
+}
