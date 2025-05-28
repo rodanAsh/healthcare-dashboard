@@ -2,12 +2,13 @@
 
 :root {
   --text-primary: #1e2b66;
-  --text-secondary: #3ae3f6;
-  --text-neutral: #9ea7b0;
+  --text-secondary: #00e2ee;
+  --text-neutral: #97a7b6;
+  --text-white: #ffffff;
   --bg-primary: #1e2b66;
-  --bg-secondary: #3ae3f6;
-  --bg-neutral: #dde3fa;
-  --bg-base: #ebf2fd;
+  --bg-secondary: #00e2ee;
+  --bg-neutral: #dde2f9;
+  --bg-base: #f6faff;
 }
 
 *{
@@ -21,7 +22,7 @@
 body {
   width: auto;
   /* min-height: 100vh; */
-  background-color: var(--bg-base);
+  background-color: #dae8f6;
   font-family: "Inter", sans-serif;
   margin: 16px;
 }

@@ -5,17 +5,25 @@ import './Sidebar.css'
 const Sidebar = () => {
   return (
     <div className='sidebar-wrapper'>
-      <h3 className='sub-title'>General</h3>
       {
-        navLinks.map((link,index) => {
-          const Icon = link.icon;
-          return (
-            <div key={index} className='nav-link'>
-              <Icon className='nav-icon' />
-              <span className='nav-title'>{link.title}</span>
+        navLinks.map((navLink, index) => (
+          <div key={index} className='nav-category'>
+            <h3 className='sub-title'>{navLink.category}</h3>
+            <div className='nav-link-container'>
+              {
+                navLink.links.map((link, linkIndex) => {
+                  const Icon = link.icon;
+                  return (
+                    <div key={linkIndex} className='nav-link'>
+                      <Icon className='nav-icon' />
+                      <span className='nav-title'>{link.title}</span>
+                    </div>
+                  )
+                })
+              }
             </div>
-          ) 
-        })
+          </div>
+        ))
       }
     </div>
   )

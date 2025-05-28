@@ -1,0 +1,282 @@
+.anatomy-section-wrapper {
+    background-color: var(--bg-base);
+    border-radius: 12px;
+    padding: 16px;
+    /* width: 240px; */
+}
+
+.search-icon {
+    display: flex;
+    justify-content: end;
+}
+
+.search-icon>.icon {
+    color: var(--text-neutral);
+    font-size: 20px;
+}
+
+.image-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-wrapper>img {
+    display: block;
+    width: 180px;
+}
+
+.heart-label {
+    position: absolute;
+    right: -84px;
+    top: 74px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 5px;
+    background-color: var(--bg-primary);
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.heart-label>img {
+    width: 24px;
+}
+
+.heart-label>p {
+    color: white;
+    font-size: 12px;
+}
+
+.leg-label {
+    position: absolute;
+    left: -60px;
+    bottom: 92px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--bg-secondary);
+    padding: 8px;
+    border-radius: 12px;
+    width: fit-content;
+}
+
+.leg-label>img {
+    width: 24px;
+}
+
+.leg-label>p {
+    color: white;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .anatomy-section-wrapper {
+        padding: 8px;
+    }
+
+    .anatomy-section-wrapper>.image-wrapper>img {
+        width: 120px;
+    }
+
+    .heart-label {
+        right: -24px;
+        top: 50px;
+        padding: 6px 4px;
+        gap: 2px;
+        border-radius: 6px;
+    }
+
+    .heart-label>img {
+        width: 14px;
+    }
+
+    .heart-label>p {
+        font-size: 10px;
+    }
+
+    .leg-label {
+        left: -8px;
+        bottom: 60px;
+        padding: 6px 4px;
+        gap: 2px;
+        border-radius: 6px;
+    }
+
+    .leg-label>img {
+        width: 14px;
+    }
+
+    .leg-label>p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 560px) {
+    .anatomy-section-wrapper {
+        padding: 10px;
+    }
+
+    .anatomy-section-wrapper>.image-wrapper>img {
+        width: 168px;
+    }
+
+    .heart-label {
+        right: -24px;
+        top: 72px;
+        padding: 6px 8px;
+        gap: 2px;
+        border-radius: 6px;
+    }
+
+    .heart-label>img {
+        width: 16px;
+    }
+
+    .heart-label>p {
+        font-size: 11px;
+    }
+
+    .leg-label {
+        left: -8px;
+        bottom: 88px;
+        padding: 6px 8px;
+        gap: 2px;
+        border-radius: 6px;
+    }
+
+    .leg-label>img {
+        width: 16px;
+    }
+
+    .leg-label>p {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 640px) {
+    .anatomy-section-wrapper {
+        padding: 12px;
+    }
+
+    .anatomy-section-wrapper>.image-wrapper>img {
+        width: 180px;
+    }
+
+    .heart-label {
+        right: -36px;
+        top: 76px;
+        padding: 6px 8px;
+        gap: 4px;
+        border-radius: 6px;
+    }
+
+    .heart-label>img {
+        width: 18px;
+    }
+
+    .heart-label>p {
+        font-size: 12px;
+    }
+
+    .leg-label {
+        left: -4px;
+        bottom: 94px;
+        padding: 6px 8px;
+        gap: 4px;
+        border-radius: 6px;
+    }
+
+    .leg-label>img {
+        width: 18px;
+    }
+
+    .leg-label>p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 760px) {
+    .anatomy-section-wrapper {
+        padding: 16px 24px;
+    }
+
+    .anatomy-section-wrapper>.image-wrapper>img {
+        width: 160px;
+    }
+
+    .heart-label {
+        top: 70px;
+        right: -96px;
+        padding: 6px 8px;
+        gap: 4px;
+        border-radius: 6px;
+    }
+
+    .heart-label>img {
+        width: 18px;
+    }
+
+    .heart-label>p{
+        font-size: 12px;
+    }
+
+    .leg-label {
+        left: -68px;
+        bottom: 84px;
+        padding: 6px 8px;
+        gap: 4px;
+        border-radius: 6px;
+    }
+
+    .leg-label>img {
+        width: 18px;
+    }
+
+    .leg-label>p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+    .anatomy-section-wrapper {
+        padding: 16px 10px;
+    }
+
+    .anatomy-section-wrapper>.image-wrapper>img {
+        width: 120px;
+    }
+
+    .heart-label {
+        top: 52px;
+        right: -60px;
+        padding: 4px 2px;
+        gap: 4px;
+        border-radius: 5px;
+    }
+
+    .heart-label>img {
+        width: 12px;
+    }
+
+    .heart-label>p {
+        font-size: 10px;
+    }
+
+    .leg-label {
+        left: -44px;
+        bottom: 64px;
+        padding: 4px 2px;
+        gap: 4px;
+        border-radius: 5px;
+    }
+
+    .leg-label>img {
+        width: 12px;
+    }
+
+    .leg-label>p {
+        font-size: 10px;
+    }
+}

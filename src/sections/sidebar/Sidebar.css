@@ -1,15 +1,23 @@
 .sidebar-wrapper {
-    background-color: var(--bg-base); 
+    /* flex: 1; */
+    background-color: var(--bg-base);
+    padding: 24px 20px;
+    border-radius: 0px 0px 0px 40px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 20px 16px;
-    border-radius: 0px 0px 0px 20px;
+    gap: 24px;
 }
 
 .sub-title {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-neutral);
+}
+
+.nav-link-container {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .nav-link {
@@ -17,6 +25,13 @@
     align-items: center;
     gap: 12px;
     color: var(--text-neutral);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .nav-icon {
@@ -25,4 +40,95 @@
 
 .nav-title {
     font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .sidebar-wrapper {
+        padding: 16px 8px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+    }
+
+    .nav-link-container {
+        margin-top: 16px;
+        gap: 12px;
+    }
+
+    .nav-link {
+        gap: 5px;
+    }
+
+    .nav-icon {
+    font-size: 12px;
+    }
+
+    .nav-title {
+    font-size: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 560px) {
+    .sidebar-wrapper {
+        padding: 16px 8px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+    }
+
+    .nav-link-container {
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .nav-link {
+        gap: 8px;
+    }
+
+    .nav-icon {
+    font-size: 14px;
+    }
+
+    .nav-title {
+    font-size: 14px;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 760px) {
+    .sidebar-wrapper {
+        padding: 20px 16px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+    }
+
+    .nav-link-container {
+        margin-top: 20px;
+        gap: 16px;
+    }
+
+    .nav-link {
+        gap: 10px;
+    }
+
+    .nav-icon {
+    font-size: 14px;
+    }
+
+    .nav-title {
+    font-size: 14px;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+    .sidebar-wrapper {
+        padding: 20px 16px;
+    }
+
+    .nav-link {
+        gap: 8px;
+    }
 }

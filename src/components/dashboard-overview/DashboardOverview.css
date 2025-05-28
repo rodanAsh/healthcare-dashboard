@@ -1,0 +1,26 @@
+.dashboard-overview-wrapper {
+    display: flex;
+    margin: 1.5rem;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+@media (min-width: 481px) and (max-width: 560px) {
+    .dashboard-overview-wrapper {
+        margin: 1.2rem;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 640px) {
+    .dashboard-overview-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 921px) and (max-width: 1200px) {
+    .dashboard-overview-wrapper {
+        gap: 40px;
+    }
+}

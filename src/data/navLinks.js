@@ -9,35 +9,50 @@ import { IoSettingsSharp } from "react-icons/io5";
 
 export const navLinks = [
     {
-        icon: AiFillAppstore,
-        title: "Dashboard",
+        category: "General",
+        links: [
+            {
+                icon: AiFillAppstore,
+                title: "Dashboard",
+            },
+            {
+                icon: RiArrowUpDownFill,
+                title: "History"
+            },
+            {
+                icon: BiSolidCalendar,
+                title: "Calendar"
+            },
+            {
+                icon: BsFillPlusSquareFill,
+                title: "Appointments"
+            },
+            {
+                icon: BsGraphUpArrow,
+                title: "Statistics"
+            }
+        ]
     },
     {
-        icon: RiArrowUpDownFill,
-        title: "History"
+        category: "Tools",
+        links: [
+            {
+                icon: IoChatbubbleEllipsesSharp,
+                title: "Chat"
+            },
+            {
+                icon: IoCall,
+                title: "Support"
+            }
+        ]
     },
     {
-        icon: BiSolidCalendar,
-        title: "Calendar"
-    },
-    {
-        icon: BsFillPlusSquareFill,
-        title: "Appointments"
-    },
-    {
-        icon: BsGraphUpArrow,
-        title: "Statistics"
-    },
-    {
-        icon: IoChatbubbleEllipsesSharp,
-        title: "Chat"
-    },
-    {
-        icon: IoCall,
-        title: "Support"
-    },
-    {
-        icon: IoSettingsSharp,
-        title: "Settings"
+        category: "",
+        links: [
+            {
+                icon: IoSettingsSharp,
+                title: "Settings"
+            }
+        ]
     }
 ]

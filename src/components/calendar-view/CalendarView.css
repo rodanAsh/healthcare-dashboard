@@ -1,0 +1,126 @@
+.calendar-wrapper {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.calendar-grid {
+    text-align: center;
+    color: var(--text-primary);
+    padding: 16px 8px;
+    transition: all 0.3s ease;
+}
+
+.calendar-grid:hover {
+    background-color: var(--bg-neutral);
+    transform: scale(1.05);
+    border-radius: 12px;
+    
+}
+
+.calendar-grid>p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.calendar-grid>h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.time-wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+@media (max-width: 480px) {
+    .calendar-wrapper {
+        justify-content: start;
+        gap: 5px;
+    }
+
+    .calendar-grid>p {
+        font-size: 12px;
+    }
+
+    .calendar-grid>h3 {
+        font-size: 16px;
+    }
+
+    .time-wrapper {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 560px) {
+    .calendar-wrapper {
+        justify-content: start;
+        gap: 8px;
+    }
+
+    .calendar-grid>p {
+        font-size: 12px;
+    }
+
+    .calendar-grid>h3 {
+        font-size: 16px;
+    }
+
+    .time-wrapper {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 640px) {
+    .calendar-wrapper {
+        justify-content: start;
+        gap: 10px;
+    }
+
+    .calendar-grid>p {
+        font-size: 12px;
+    }
+
+    .calendar-grid>h3 {
+        font-size: 16px;
+    }
+
+    .time-wrapper {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 760px) {
+    .calendar-wrapper {
+        justify-content: start;
+        gap: 10px;
+    }
+}
+
+@media (min-width:921px) and (max-width: 1200px) {
+    .calendar-wrapper {
+        justify-content: start;
+        gap: 8px;
+    }
+
+    .calendar-grid>p {
+        font-size: 12px;
+    }
+
+    .calendar-grid>h3 {
+        font-size: 16px;
+    }
+
+    .time-wrapper {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+}

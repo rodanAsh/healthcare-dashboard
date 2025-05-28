@@ -1,13 +1,15 @@
-import profile from '../../assets/profile-icon.png'
+import profile from '../../assets/profile_icon.png'
 import './Header.css'
-import { FaBell, FaPlus } from "react-icons/fa6";
+import { FaPlus } from "react-icons/fa6";
 import { IoSearchOutline } from "react-icons/io5";
+import { HiBell } from "react-icons/hi";
 
 const Header = () => {
   return (
     <div className='header'>
-      {/* Left side */}
-      <div className="left">
+
+      <div className='header-main'>
+
         {/* logo */}
         <h2 className='title'>
           Health<span>care.</span>
@@ -22,12 +24,12 @@ const Header = () => {
               placeholder='Search'
             />
           </span>
-          <FaBell className='bell-icon' />
+          <HiBell className='bell-icon' />
         </div>
       </div>
       
-
       {/* profile section */}
+
       <div className='profile'>
         <img src={profile} alt="" />
         <FaPlus className="plus-icon" />

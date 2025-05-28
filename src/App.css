@@ -1,11 +1,63 @@
 .app{
-  background-color: white;
-  margin: 24px;
-  padding: 24px;
-  border-radius: 24px;
+  padding: 16px;
+  border-radius: 50px;
+  background-color: var(--text-white);
+  position: relative;
 }
 
 .section-wrapper{
+  height: 100%;
   display: flex;
-  gap: 24px;
+  gap: 32px;
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding-top: 8px 4px;
+    
+  }
+
+  .section-wrapper {
+    gap: 8px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 560px) {
+  .app {
+    padding: 12px 6px;
+  }
+
+  .section-wrapper {
+    gap: 8px;
+  }
+} 
+
+@media (min-width: 561px) and (max-width: 640px) {
+  .app {
+    padding: 12px 8px;
+  }
+
+  .section-wrapper {
+    gap: 12px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 760px) {
+  .app {
+    padding: 14px 10px;
+  }
+
+  .section-wrapper {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 920px) {
+  .app {
+    padding: 14px 12px;
+  }
+
+  .section-wrapper {
+    gap: 24px;
+  }
 }
